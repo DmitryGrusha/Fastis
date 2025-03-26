@@ -265,7 +265,10 @@ open class FastisController<Value: FastisValue>: UIViewController, JTACMonthView
         self.configureSubviews()
         self.configureConstraints()
         self.configureInitialState()
+        self.configure()
     }
+  
+    public func configure() {}
 
     override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -431,7 +434,7 @@ open class FastisController<Value: FastisValue>: UIViewController, JTACMonthView
     }
 
     @objc
-    func done() {
+    public func done() {
         self.isDone = true
         self.dismiss(animated: true)
     }
