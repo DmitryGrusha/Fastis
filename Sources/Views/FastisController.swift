@@ -431,7 +431,7 @@ open class FastisController<Value: FastisValue>: UIViewController, JTACMonthView
     }
 
     @objc
-    private func done() {
+    func done() {
         self.isDone = true
         self.dismiss(animated: true)
     }
