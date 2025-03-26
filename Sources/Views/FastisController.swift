@@ -259,7 +259,7 @@ open class FastisController<Value: FastisValue>: UIViewController, JTACMonthView
         fatalError("init(coder:) has not been implemented")
     }
 
-    override public func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         self.configureUI()
         self.configureSubviews()
@@ -268,7 +268,7 @@ open class FastisController<Value: FastisValue>: UIViewController, JTACMonthView
         self.configure()
     }
   
-    public func configure() {}
+    open func configure() {}
 
     override open func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
